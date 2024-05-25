@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rokkitt", serif;
+
+  .sidebar {
+    position: fixed;
+    width: 25%;
+    float: left;
+    height: 100%;
+    background: black;
+    transition: all 0.5s ease;
+  }
+
+  .sidebar header {
+    font-size: 22px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #ff5e24;
+    user-select: none;
+  }
+
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(255 154 0 / 46%);
+    transition: 0.4s;
+  }
+
+  ul li:hover a {
+    padding-left: 50px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    color: red;
+  }
+
+  .sidebar ul a i {
+    margin-right: 16px;
+  }
+
+  label #btn,
+  label #cancel {
+    position: absolute;
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all 0.5s;
+  }
+
+  #body-container {
+    background: #fff8dc;
+    width: 100%;
+  }
+
+  #right-body-part {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all 0.5s;
+    background: #fff8dc;
+    width: 75%;
+    float: right;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
